@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "02FC9D7D-8738-4C16-BC23-985FF5B90DFA"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D178EC7F-F15F-4000-A531-FE1296630474"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IAGamesTest/DataLayer/Network/NetworkAPI.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "getRequest()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A7790BE5-D967-400E-BC2B-61A085819B18"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IAGamesTest/DataLayer/Network/NetworkAPI/NetworkAPI.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "getRequest()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8B870AA1-95A2-484D-B004-B623D1DC1FEF"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IAGamesTest/DataLayer/Network/NetworkAPI/NetworkAPI.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "getRequest()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "978FC02E-ADF9-42D1-BB81-EFC4664582E8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IAGamesTest/DataLayer/Repositories/GamesRepository.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "fetchGames()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B8CBE877-A408-49FD-8674-93C8D1193C5D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IAGamesTest/Presentation/InitView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8FAE290B-A879-4A4E-95C2-3CC807939400"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IAGamesTest/DataLayer/Repositories/GamesRepository.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "fetchGames()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "8FAE290B-A879-4A4E-95C2-3CC807939400 - aae20142ca85b598"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for IAGamesTest.GamesRepositoryImpl.fetchGames() async throws -&gt; ()"
+                  moduleName = "IAGamesTest.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielcoria/Documents/DCProjects/IAGamesTest/IAGamesTest/IAGamesTest/DataLayer/Repositories/GamesRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23">
+               </Location>
+               <Location
+                  uuid = "8FAE290B-A879-4A4E-95C2-3CC807939400 - cd30ae657c361a4c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for IAGamesTest.GamesRepositoryImpl.fetchGames() async throws -&gt; ()"
+                  moduleName = "IAGamesTest.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielcoria/Documents/DCProjects/IAGamesTest/IAGamesTest/IAGamesTest/DataLayer/Repositories/GamesRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23">
+               </Location>
+               <Location
+                  uuid = "8FAE290B-A879-4A4E-95C2-3CC807939400 - 67a90f733800f09a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for IAGamesTest.GamesRepositoryImpl.fetchGames() async throws -&gt; ()"
+                  moduleName = "IAGamesTest.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielcoria/Documents/DCProjects/IAGamesTest/IAGamesTest/IAGamesTest/DataLayer/Repositories/GamesRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23">
+               </Location>
+               <Location
+                  uuid = "8FAE290B-A879-4A4E-95C2-3CC807939400 - 3e0c959b7742911d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for IAGamesTest.GamesRepositoryImpl.fetchGames() async throws -&gt; ()"
+                  moduleName = "IAGamesTest.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielcoria/Documents/DCProjects/IAGamesTest/IAGamesTest/IAGamesTest/DataLayer/Repositories/GamesRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23">
+               </Location>
+               <Location
+                  uuid = "8FAE290B-A879-4A4E-95C2-3CC807939400 - 3e0c959b7742911d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for IAGamesTest.GamesRepositoryImpl.fetchGames() async throws -&gt; ()"
+                  moduleName = "IAGamesTest.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielcoria/Documents/DCProjects/IAGamesTest/IAGamesTest/IAGamesTest/DataLayer/Repositories/GamesRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4DBC179E-9972-4D4A-92C8-8C1C19FACF32"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IAGamesTest/DataLayer/Network/Client/ClientNetwork.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "getRequest(endpoint:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4DBC179E-9972-4D4A-92C8-8C1C19FACF32 - 589e2fbd51d96449"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for IAGamesTest.NetworkManager.getRequest(endpoint: Swift.String) async throws -&gt; Swift.Array&lt;IAGamesTest.GameModel&gt;"
+                  moduleName = "IAGamesTest.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielcoria/Documents/DCProjects/IAGamesTest/IAGamesTest/IAGamesTest/DataLayer/Network/Client/ClientNetwork.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28">
+               </Location>
+               <Location
+                  uuid = "4DBC179E-9972-4D4A-92C8-8C1C19FACF32 - 489682a2ee1a4f4f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for IAGamesTest.NetworkManager.getRequest(endpoint: Swift.String) async throws -&gt; Swift.Array&lt;IAGamesTest.GameModel&gt;"
+                  moduleName = "IAGamesTest.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielcoria/Documents/DCProjects/IAGamesTest/IAGamesTest/IAGamesTest/DataLayer/Network/Client/ClientNetwork.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28">
+               </Location>
+               <Location
+                  uuid = "4DBC179E-9972-4D4A-92C8-8C1C19FACF32 - 937b4a9c3db2204b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for IAGamesTest.NetworkManager.getRequest(endpoint: Swift.String) async throws -&gt; Swift.Array&lt;IAGamesTest.GameModel&gt;"
+                  moduleName = "IAGamesTest.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielcoria/Documents/DCProjects/IAGamesTest/IAGamesTest/IAGamesTest/DataLayer/Network/Client/ClientNetwork.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28">
+               </Location>
+               <Location
+                  uuid = "4DBC179E-9972-4D4A-92C8-8C1C19FACF32 - c90afb0c4f874e44"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for IAGamesTest.NetworkManager.getRequest(endpoint: Swift.String) async throws -&gt; Swift.Array&lt;IAGamesTest.GameModel&gt;"
+                  moduleName = "IAGamesTest.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielcoria/Documents/DCProjects/IAGamesTest/IAGamesTest/IAGamesTest/DataLayer/Network/Client/ClientNetwork.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0ADC6665-7DDF-490B-B63E-BCF6856F2603"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IAGamesTest/DataLayer/Network/NetworkAPI/NetworkManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "requestGET(url:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
