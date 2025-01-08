@@ -12,14 +12,14 @@ actor NetworkManager {
 	//shared instance
 	static let shared = NetworkManager()
 	
-	nonisolated func handleError(error: CustomError) -> Error {
-		
+	nonisolated func handleError(error: NetworkError) -> Error {
 		return error
 	}
 	
 	public func requestGET(url: URL) async throws -> Data {
 		
-		let (data, response) = try await URLSession.shared.data(from: url)
+		// This can be replaced for another network library
+		let (data, _) = try await URLSession.shared.data(from: url)
 		return data
 	}
 		

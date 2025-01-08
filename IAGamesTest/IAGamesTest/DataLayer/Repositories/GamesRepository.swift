@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 protocol GamesRepository {
 	func fetchGames() async throws
@@ -14,15 +15,19 @@ protocol GamesRepository {
 final class GamesRepositoryImpl: GamesRepository {
 	
 	private let networkClient: ClientNetworkAPI
+	private var dataManager = DataController.shared
 	
-	init(networkClient: ClientNetworkAPI = NetworkManager()) {
+	init(networkClient: ClientNetworkAPI) {
 		self.networkClient = networkClient
 	}
 	
 	func fetchGames() async throws {
 		let responseData = try await networkClient.getRequest(endpoint: AppConfig.Endpoints.games.rawValue)
 		
-		// save locally
-		print(responseData)
+//		// store locally
+		for game in responseData {
+			dataManager.add(gameModel: game)
+		}
+		dataManager.save()
 	}
 }

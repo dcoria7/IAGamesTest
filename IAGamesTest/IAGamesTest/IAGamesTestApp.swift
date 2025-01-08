@@ -20,6 +20,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 struct IAGamesTestApp: App {
 	@UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
 	@StateObject private var appRootManager = AppRootManager()
+	@StateObject private var dataController = DataController.shared
 	let dependency = DependencyContainer()
 	
     var body: some Scene {
@@ -31,6 +32,7 @@ struct IAGamesTestApp: App {
 						
 					case .home:
 						HomeView()
+							.environment(\.managedObjectContext, dataController.container.viewContext)
 				}
 			}
 			.environmentObject(appRootManager)

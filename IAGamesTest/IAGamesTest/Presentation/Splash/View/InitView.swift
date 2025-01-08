@@ -28,14 +28,15 @@ struct InitView: View {
 			Task {
 				do {
 					try await viewModel.fetchData()
-					
-					DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-						withAnimation(.spring()) {
-							appRootManager.currentRoot = .home
-						}
+				} catch NetworkError.noInternet(let error) {
+					// show error message
+					print(error)
+				}
+				
+				DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+					withAnimation(.spring()) {
+						appRootManager.currentRoot = .home
 					}
-				} catch {
-					// handle error message
 				}
 			}
 		}
