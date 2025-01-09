@@ -10,13 +10,5 @@ import SwiftUI
 
 class HomeViewModel: ObservableObject {
 	
-	@Published var searchText: String = ""
-	
-	var categoriesArray: [String] = []
-	
-	func createCategoriesArray() {
-		categoriesArray = ["Action", "Adventure", "Strategy", "Casual", "RPG"]
-	}
-	
 	
 }

@@ -9,6 +9,8 @@ import SwiftUI
 
 struct ListOfGameView: View {
 	
+	@EnvironmentObject private var coordinator: Coordinator
+	@EnvironmentObject private var dependency: DependencyContainer
 	@State private var searchText = ""
 	@State private var selectedGenre: String = ""
 	
@@ -22,21 +24,23 @@ struct ListOfGameView: View {
 		DynamicFetchRequestView(withSearchText: searchText, category: selectedGenre) { results in
 			
 			ScrollView(.vertical) {
+				HStack {
+					makeDropDown(results: results)
+					makeClearButton()
+						.padding(.bottom, 10)
+				}
+				.zIndex(1)
 				
-				makeDropDown(results: results)
-				makeClearButton()
 				makeGameList(results: results)
 				
 			}
+			.scrollIndicators(.hidden)
 			.searchable(text: $searchText, placement: .automatic, prompt: "Search")
 			.scrollDismissesKeyboard(.immediately)
 			
 		}
 		.padding(.horizontal, 10)
 		.navigationTitle("Freetogame")
-		.navigationDestination(for: Game.self) { game in
-			GameDetailView(game: game)
-		}
 	}
 	
 	@ViewBuilder
@@ -60,7 +64,7 @@ struct ListOfGameView: View {
 				.foregroundStyle(.white)
 		}
 		.frame(width: 50, height: 30)
-		.background(.black)
+		.background(.red)
 		.cornerRadius(10)
 	}
 	
@@ -68,9 +72,10 @@ struct ListOfGameView: View {
 	private func makeGameList(results: FetchedResults<Game>) -> some View {
 		LazyVGrid(columns: fixedColumns, spacing: 20) {
 			ForEach(results.count > 1 ? results : allGames) { game in
-				NavigationLink(value: game) {
-					GameView(game: game)
-				}
+				GameView(game: game)
+					.onTapGesture {
+						coordinator.push(page: .detail(game: game, viewModel: GameDetailViewModel(dependency: dependency)))
+					}
 			}
 		}
 	}

@@ -21,22 +21,23 @@ struct IAGamesTestApp: App {
 	@UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
 	@StateObject private var appRootManager = AppRootManager()
 	@StateObject private var dataController = DataController.shared
+	
 	let dependency = DependencyContainer()
 	
-    var body: some Scene {
+	var body: some Scene {
 		WindowGroup {
 			Group {
 				switch appRootManager.currentRoot {
 					case .splash:
 						InitView(viewModel: InitViewModel(dependency: dependency))
 						
-					case .home:
-						HomeView()
+					case .homeCoordinator:
+						CoordinatorView(dependency: dependency)
 							.environment(\.managedObjectContext, dataController.container.viewContext)
 				}
 			}
 			.environmentObject(appRootManager)
 			.environmentObject(dependency)
 		}
-    }
+	}
 }

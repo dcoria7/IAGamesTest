@@ -7,6 +7,8 @@
 
 protocol GamesUseCase {
 	func executeFetchGames() async throws
+	func executeRemoveGame(game: Game)
+	func executeUpdateGame(game: Game, newGame: GameModel)
 }
 
 final class GamesUseCaseImp: GamesUseCase {
@@ -18,5 +20,13 @@ final class GamesUseCaseImp: GamesUseCase {
 	
 	func executeFetchGames() async throws {
 		try await gamesRepository.fetchGames()
+	}
+	
+	func executeRemoveGame(game: Game) {
+		gamesRepository.removeGame(game: game)
+	}
+	
+	func executeUpdateGame(game: Game, newGame: GameModel) {
+		gamesRepository.updateGame(game: game, newGame: newGame)
 	}
 }

@@ -13,14 +13,9 @@ struct InitView: View {
 	
 	@StateObject var viewModel: InitViewModel
 	
-	init(viewModel: InitViewModel) {
-		self._viewModel = StateObject(wrappedValue: viewModel)
-	}
-	
 	var body: some View {
 		VStack {
 			Text("Loading....")
-			Image(systemName: "tempo")
 		}
 		.frame(maxWidth: .infinity,  maxHeight: .infinity)
 		.background(.red)
@@ -35,7 +30,7 @@ struct InitView: View {
 				
 				DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
 					withAnimation(.spring()) {
-						appRootManager.currentRoot = .home
+						appRootManager.currentRoot = .homeCoordinator
 					}
 				}
 			}

@@ -10,6 +10,8 @@ import SwiftUI
 
 protocol GamesRepository {
 	func fetchGames() async throws
+	func removeGame(game: Game)
+	func updateGame(game: Game, newGame: GameModel)
 }
 
 final class GamesRepositoryImpl: GamesRepository {
@@ -24,10 +26,15 @@ final class GamesRepositoryImpl: GamesRepository {
 	func fetchGames() async throws {
 		let responseData = try await networkClient.getRequest(endpoint: AppConfig.Endpoints.games.rawValue)
 		
-//		// store locally
-		for game in responseData {
-			dataManager.add(gameModel: game)
-		}
-		dataManager.save()
+		// store locally
+		dataManager.storeData(responseData: responseData)
+	}
+	
+	func removeGame(game: Game) {
+		dataManager.removeGame(game: game)
+	}
+	
+	func updateGame(game: Game, newGame: GameModel) {
+		dataManager.updateGame(game: game, newGame: newGame)
 	}
 }

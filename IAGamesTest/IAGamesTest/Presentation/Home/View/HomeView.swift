@@ -12,10 +12,6 @@ struct HomeView: View {
 	
 	@StateObject var viewModel = HomeViewModel()
 	
-	init() {
-		viewModel.categoriesArray = allGames.map { $0.wrappedGenre }
-	}
-	
 	var body: some View {
 		NavigationStack {
 			ListOfGameView(allGames: allGames)

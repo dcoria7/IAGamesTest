@@ -22,6 +22,6 @@ struct GameView: View {
 				.aspectRatio(contentMode: .fill)
 				.clipped()
 		}
-		.cornerRadius(10)
+		.cornerRadius(10, corners: .allCorners)
 	}
 }

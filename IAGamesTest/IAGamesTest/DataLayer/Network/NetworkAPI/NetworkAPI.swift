@@ -31,7 +31,6 @@ class NetworkAPI: NSObject {
 	func getRequest() async throws -> [GameModel] {
 		do {
 			let data = try await networkManager.requestGET(url: apiURL)
-//			let result: [GameModel] = try self.parseData(data: data)
 			return try self.parseData(data: data)
 		} catch let error {
 			print("error fetching data")

@@ -7,23 +7,20 @@
 
 import Foundation
 
-@MainActor
 class InitViewModel: ObservableObject {
 	
-	var dependency: DependencyContainer
-	var repository: GamesRepository
+	private var useCase: GamesUseCase
 	
 	init(dependency: DependencyContainer) {
-		self.dependency = dependency
-		self.repository = dependency.gamesRepository()
+		self.useCase = dependency.gamesUseCase()
 	}
 	
 	func fetchData() async throws {
 		// validate if there's connections
-		let isConnectionAvailable: Bool = true
+		let isConnectionAvailable: Bool = false
 		
 		if isConnectionAvailable {
-			try? await repository.fetchGames()
+			try? await useCase.executeFetchGames()
 		} else {
 			throw NetworkError.noInternet("no internet connection")
 		}

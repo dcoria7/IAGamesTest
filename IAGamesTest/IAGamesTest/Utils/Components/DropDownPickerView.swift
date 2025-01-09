@@ -50,7 +50,7 @@ struct DropDownPicker: View {
 						.padding(.trailing, 30)
 				}
 				//				.padding(.horizontal, 15)
-				.frame(height: 70)
+				.frame(height: 50)
 				.background(.black)
 				.contentShape(.rect)
 				.onTapGesture {

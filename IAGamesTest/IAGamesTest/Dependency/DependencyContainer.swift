@@ -28,6 +28,10 @@ class DependencyContainer: ObservableObject {
 			GamesRepositoryImpl(networkClient: self.networkManager())
 		}.inObjectScope(.container)
 		
+		parentContainer.register(GamesUseCase.self) { _ in
+			GamesUseCaseImp(gamesRepository: self.gamesRepository())
+		}.inObjectScope(.container)
+		
 	}
 	
 	func gamesRepository() -> GamesRepository {
@@ -36,5 +40,9 @@ class DependencyContainer: ObservableObject {
 	
 	func networkManager() -> ClientNetworkAPI {
 		parentContainer.resolve(ClientNetworkAPI.self)!
+	}
+	
+	func gamesUseCase() -> GamesUseCase {
+		parentContainer.resolve(GamesUseCase.self)!
 	}
 }
