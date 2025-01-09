@@ -39,7 +39,7 @@ struct DropDownPicker: View {
 				HStack {
 					Text(selection.isEmpty ? "Select Category" : selection)
 						.foregroundColor(selection.isEmpty ? .white : .gray)
-						.padding(.horizontal, 48)
+						.padding(.horizontal)
 					
 					Spacer(minLength: 0)
 					
@@ -47,9 +47,8 @@ struct DropDownPicker: View {
 						.font(.title3)
 						.foregroundColor(.white)
 						.rotationEffect(.degrees((showDropdown ? -180 : 0)))
-						.padding(.trailing, 30)
+						.padding(.trailing, 20)
 				}
-				//				.padding(.horizontal, 15)
 				.frame(height: 50)
 				.background(.black)
 				.contentShape(.rect)
@@ -100,7 +99,7 @@ struct DropDownPicker: View {
 				.animation(.none, value: selection)
 				.frame(height: 50)
 				.contentShape(.rect)
-				.padding(.horizontal, 48)
+				.padding(.horizontal)
 				.onTapGesture {
 					withAnimation(.snappy) {
 						selection = option
@@ -109,7 +108,7 @@ struct DropDownPicker: View {
 				}
 				
 				makeSeparator()
-					.padding(.horizontal, 48)
+					.padding(.horizontal)
 			}
 		}
 		.transition(.move(edge: state == .top ? .bottom : .top))

@@ -15,10 +15,17 @@ struct InitView: View {
 	
 	var body: some View {
 		VStack {
-			Text("Loading....")
+			IconView(.appIcon, .original)
+				.frame(height: 100)
+				.cornerRadius(10, corners: .allCorners)
+				.padding()
+			
+			Text("Loading...")
+			ProgressView()
+				.frame(width: 100)
 		}
 		.frame(maxWidth: .infinity,  maxHeight: .infinity)
-		.background(.red)
+		.background(.black.opacity(0.5))
 		.onAppear {
 			Task {
 				do {

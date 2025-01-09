@@ -27,7 +27,6 @@ struct ListOfGameView: View {
 				HStack {
 					makeDropDown(results: results)
 					makeClearButton()
-						.padding(.bottom, 10)
 				}
 				.zIndex(1)
 				

@@ -9,4 +9,5 @@ import Foundation
 
 enum Icon: String {
 	case categoryIcon = "gamepad"
+	case appIcon = "logo"
 }

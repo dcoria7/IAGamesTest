@@ -16,8 +16,8 @@ class InitViewModel: ObservableObject {
 	}
 	
 	func fetchData() async throws {
-		// validate if there's connections
-		let isConnectionAvailable: Bool = false
+		// validate if there's internet connections
+		let isConnectionAvailable: Bool = true
 		
 		if isConnectionAvailable {
 			try? await useCase.executeFetchGames()
