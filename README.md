@@ -28,7 +28,7 @@ Using Swift 5
 
 ##
 
-![screenshot](images/detail.png)
+![screenshot](Images/folders.png)
 
 
 
