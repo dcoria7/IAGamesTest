@@ -12,6 +12,7 @@ protocol GamesRepository {
 	func fetchGames() async throws
 	func removeGame(game: Game)
 	func updateGame(game: Game, newGame: GameModel)
+	func testResponse() async throws -> [GameModel]
 }
 
 final class GamesRepositoryImpl: GamesRepository {
@@ -28,6 +29,10 @@ final class GamesRepositoryImpl: GamesRepository {
 		
 		// store locally
 		dataManager.storeData(responseData: responseData)
+	}
+	
+	func testResponse() async throws -> [GameModel] {
+		try await networkClient.getRequest(endpoint: AppConfig.Endpoints.games.rawValue)
 	}
 	
 	func removeGame(game: Game) {
