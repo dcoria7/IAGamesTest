@@ -29,6 +29,19 @@ Using Swift 5
 ##
 
 ![screenshot](Images/folders.png)
+<p float="middle">
+  <img src="Images/home.png" width="300" /> 
+  <img src="Images/search.png" width="300" />
+</p>
+<p float="middle">
+  <img src="Images/searchbycategory1.png" width="300" /> 
+  <img src="Images/searchbycategory2.png" width="300" />
+  <img src="Images/searchbycategory3.png" width="300" />
+</p>
+<p float="middle">
+  <img src="Images/detail.png" width="300" /> 
+  <img src="Images/editdetail.png" width="300" />
+</p>
 
 
 
